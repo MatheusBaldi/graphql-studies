@@ -14,6 +14,18 @@ const typeDefs = gql`
     phone: String
     type: _UserType!
   }
+
+  type UserWhere {
+    userId: ID
+    name: String
+    email: String
+  }
+
+  input InputUserWhere {
+    userId: ID
+    name: String
+    email: String
+  }
 `;
 
 const resolvers = {
